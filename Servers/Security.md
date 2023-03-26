@@ -28,9 +28,9 @@ To change the default SSH port in Ubuntu, follow these steps:
 ```
 7. Verify that the SSH service is running on the new port by attempting to connect to the server using the new port number:
 ```bash
-  ssh username@server_ip_address:2222
+  ssh username@server_ip_address:5412
 ```
 OR
 ```bash
-  ssh username@server_ip_address -p 2222
+  ssh username@server_ip_address -p 5412
 ```    
