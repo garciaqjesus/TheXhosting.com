@@ -56,3 +56,4 @@ For example, if the script is located in the "/home/user/scripts" directory, the
 
 The "/bin/bash" part of the cron job entry specifies the location of the bash executable, which should be left unchanged.
 
+![Logo](https://cdn.discordapp.com/attachments/977211825882025984/1089542172384169994/thexhosting-ascii.png)
