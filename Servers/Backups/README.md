@@ -8,7 +8,7 @@ This script automates the process of creating a compressed tar.gz archive of you
 To download it use:
 
 ```bash
-  wget https://github.com/garciaqjesus/TheXhosting.com/blob/main/Servers/Backups/backup_client.sh
+  wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Backups/backup_client.sh
 ```
 
 2. Make sure the script is executable. You can do this with the following command:
@@ -20,7 +20,7 @@ To download it use:
 3. Edit the script's information as needed.
 
 ```bash
-  nano thexhosting.sh
+  nano backup_client.sh
 ```
 
 4. To verify that the script is functioning properly, run the "backup_client.sh" command.
