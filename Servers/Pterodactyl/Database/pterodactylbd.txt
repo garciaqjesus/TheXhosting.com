@@ -1,0 +1,19 @@
+sudo su
+
+nano /etc/mysql/mariadb.conf.d/50-server.cnf //cambiar 127.0.0.1 a 0.0.0.0
+
+systemctl restart mysql
+
+systemctl restart mariadb
+
+mysql -u root -p
+
+## Pterodactyl Setup
+
+create user 'pterodactyluser'@'%' identified by 'Password1';
+
+grant all privileges on *.* to 'pterodactyluser'@'%' with grant option;
+
+flush privileges;
+
+exit
