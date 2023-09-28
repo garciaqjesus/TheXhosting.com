@@ -1,0 +1,21 @@
+1.- Poner clave a usuario root
+
+- ingrese como root: sudo su
+
+- para cambiar la clave: passwd
+
+- salir de usuario root: exit 
+
+2.- Permitir el root Login 
+
+- nano /etc/ssh/sshd_config
+
+- Buscamos: #PermitRootLogin prohibit-password
+
+- y lo cambiamos por esto: PermitRootLogin yes
+
+- o la version rapida: sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+3.- Restear SSH SERVICIIO
+
+- sudo systemctl restart ssh
