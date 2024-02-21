@@ -4,7 +4,7 @@ NEW UPDATE
 wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Pterodactyl/Database/pterodb.sh
 
 2. 
-chmod +x pterodb.sh
+sudo apt-get install dos2unix && dos2unix pterodb.sh && chmod +x pterodb.sh
 
 3.
 ./pterodb.sh
