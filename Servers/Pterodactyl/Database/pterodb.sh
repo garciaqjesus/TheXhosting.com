@@ -22,10 +22,12 @@ pterodactyl_user="pterodactyl_user_$(generate_random_string 10)"
 password=$(generate_random_string 50)
 
 # MySQL command to create the user and grant privileges
-mysql_command="create user '$pterodactyl_user'@'%' identified by '$password'; grant all privileges on *.* to '$pterodactyl_user'@'%' with grant option; flush privileges;"
+mysql_command="CREATE USER '$pterodactyl_user'@'%' IDENTIFIED BY '$password'; GRANT ALL PRIVILEGES ON *.* TO '$pterodactyl_user'@'%'; FLUSH PRIVILEGES;"
 
 # Execute MySQL command
-mysql -u root -p -e "$mysql_command"
+mysql -u root -p <<EOF
+$mysql_command
+EOF
 
 # Print detailed information
 clear
@@ -36,6 +38,7 @@ echo "======================"
 echo "USERNAME AND PASSWORD CREATED. ADD THIS TO YOUR PTERODACTYL."
 
 # Create the mysql-data.txt file and save the information
-echo -e "======================\nUSERNAME: $pterodactyl_user\nPASSWORD: $password\n======================" > mysql-data.txt
+echo -e "======================\nUSERNAME: $pterodactyl_user\nPASSWORD: $password\n======================\nPlease subscribe to my YouTube channel: https://www.youtube.com/channel/UCzJH8mcKKVdLD1nLWs4CZZw" > mysql-data.txt
 
 echo "MySQL data has been saved to mysql-data.txt."
+
