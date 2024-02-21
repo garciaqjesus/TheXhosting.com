@@ -1,3 +1,28 @@
+NEW UPDATE 
+
+1.
+
+```bash
+  wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Pterodactyl/Database/pterodb.sh
+```
+
+2. 
+
+```bash
+  chmod +x pterodb.sh
+```
+
+3.
+
+```bash
+  ./pterodb.sh
+```
+
+
+-------------------------------------
+-------------------------------------
+NOT MORE REQUIERED IF YOU RUNNED THE SCRIPT !!!
+
 sudo su
 
 nano /etc/mysql/mariadb.conf.d/50-server.cnf //cambiar 127.0.0.1 a 0.0.0.0
@@ -17,3 +42,5 @@ grant all privileges on *.* to 'pterodactyluser'@'%' with grant option;
 flush privileges;
 
 exit
+
+
