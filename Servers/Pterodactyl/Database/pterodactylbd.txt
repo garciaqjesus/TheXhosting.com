@@ -1,23 +1,13 @@
 NEW UPDATE 
 
 1.
-
-```bash
-  wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Pterodactyl/Database/pterodb.sh
-```
+wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Pterodactyl/Database/pterodb.sh
 
 2. 
-
-```bash
-  chmod +x pterodb.sh
-```
+chmod +x pterodb.sh
 
 3.
-
-```bash
-  ./pterodb.sh
-```
-
+./pterodb.sh
 
 -------------------------------------
 -------------------------------------
