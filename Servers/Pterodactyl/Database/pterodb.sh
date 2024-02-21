@@ -42,3 +42,5 @@ echo -e "======================\nUSERNAME: $pterodactyl_user\nPASSWORD: $passwor
 
 echo "MySQL data has been saved to mysql-data.txt."
 
+# FUTURE UPDATE CHECK AUTOMATIC PASSWORD; 
+# BEING ABLE TO CHECK ALL ACCOUNTS CREATED WITH THIS SCRIPT, AND ABLE TO DELET IT. 
