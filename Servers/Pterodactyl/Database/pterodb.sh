@@ -23,6 +23,7 @@ password=$(generate_random_string 50)
 mysql_command="create user '${pterodactyl_user}'@'%' identified by '${password}'; grant all privileges on *.* to '${pterodactyl_user}'@'%' with grant option; flush privileges;"
 
 # Print detailed information
+clear
 echo "======================"
 echo "USERNAME: ${pterodactyl_user}"
 echo "PASSWORD: ${password}"
