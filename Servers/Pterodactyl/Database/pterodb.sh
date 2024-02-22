@@ -16,7 +16,7 @@ generate_random_string() {
 }
 
 # Generate a random username for Pterodactyl
-pterodactyl_user="pterodactyl_user_$(generate_random_string 10)"
+pterodactyl_user="pterodactyluser-$(generate_random_string 10)"
 
 # Generate a random 50-character password
 password=$(generate_random_string 50)
