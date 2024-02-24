@@ -22,7 +22,7 @@ pterodactyl_user="pterodactyluser-$(generate_random_string 10)"
 password=$(generate_random_string 50)
 
 # MySQL command to create the user and grant privileges
-mysql_command="CREATE USER '$pterodactyl_user'@'%' IDENTIFIED BY '$password'; GRANT ALL PRIVILEGES ON *.* TO '$pterodactyl_user'@'%'; FLUSH PRIVILEGES;"
+mysql_command="CREATE USER '$pterodactyl_user'@'%' IDENTIFIED BY '$password'; GRANT ALL PRIVILEGES ON *.* TO '$pterodactyl_user'@'%' WITH GRANT OPTION; FLUSH PRIVILEGES;"
 
 # Execute MySQL command
 mysql -u root -p <<EOF
