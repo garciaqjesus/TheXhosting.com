@@ -1,4 +1,4 @@
-NEW UPDATE - !! PRIVILAGE ARE NOT WORKING GOOD YET - UNDER INVESTIGATION !!
+NEW UPDATE -
 
 1.
 wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Pterodactyl/Database/pterodb.sh
