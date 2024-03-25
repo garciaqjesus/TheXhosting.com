@@ -1,0 +1,8 @@
+FIX:
+Server Charset (0)
+
+1.
+wget https://raw.githubusercontent.com/garciaqjesus/TheXhosting.com/main/Servers/Pterodactyl/Database/update_mariadb_config.sh
+
+2. 
+chmod +x update_mariadb_config.sh && sudo ./update_mariadb_config.sh
